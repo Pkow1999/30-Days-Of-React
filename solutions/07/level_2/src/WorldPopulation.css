@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+  font-family: 'Montserrat';
+}
+
+header{
+  text-align: center;
+}
+h1{
+  font-size: 48px;
+  font-weight: 600; 
+}
+
+h2{
+  font-size: 36px;
+  font-weight: 400;
+}
+
+/*I hate graphs...*/
+.Main{
+  display: table;
+  margin: auto;
+  width: 80%;
+}
+.item{
+  display: table-row;
+  font-size: 30px;
+  font-weight: 500;
+}
+.item > .cell{
+  vertical-align: middle;
+  display: table-cell;
+  height: 40px;
+  padding-bottom: 1%;
+}
+.item > .cell.name {
+  width: fit-content;
+  padding-right: 5px;
+  text-align: right;
+}
+.item > .cell.graph{
+  width: 56%;
+}
+.item > .cell > .country-graph{
+  display: block;
+  height: 100%;
+  background-color: orange;
+  border-radius: 5px;
+}
+.item > .cell.population{
+  width: fit-content;
+  padding-left: 5px;
+}

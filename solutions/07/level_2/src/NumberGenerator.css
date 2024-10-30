@@ -1,0 +1,30 @@
+*{
+    text-align: center;
+}
+h1{
+    font-weight: 600;
+    font-size: 48px;
+}
+h2{
+    font-weight: 500;
+    font-size: 28px;
+}
+.numberGenerator{
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    justify-content: flex-start;
+    align-content: space-between;
+    align-items: center;
+    margin: 2% 10% 2% 10%;
+    gap: 2px;
+}
+.numberGenerator > .item{
+    font-weight: 500;
+    font-size: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+}
