@@ -1,0 +1,18 @@
+.randomColor{
+    display: flex;
+    flex: 0 0 auto;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    margin: 2% 20% 2% 20%;
+    gap: 4px;
+}
+
+.item{
+    color: white;
+    text-align: center;
+    width: 100%;
+    border-radius: 5px;
+    padding: 1.5% 0 1.5% 0;
+    font-weight: 900;
+}

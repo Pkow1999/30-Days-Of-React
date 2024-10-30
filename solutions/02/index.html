@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Roboto:300,400,500&display=swap"
+      rel="stylesheet"
+    />
+    <title>30 Days Of React Challenge</title>
+  </head>
+
+  <body>
+    <div class="root"></div>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+      // To get the root element from the HTML document
+      const rootElement = document.querySelector('.root')
+
+
+      const appStyle = {
+        textAlign: 'center',
+        fontFamily: 'helvetica',
+        fontSize: '20px'
+      }
+      const footerStyle = {
+        backgroundColor: '#1F1F1F',
+        color: 'beige',
+        position: 'absolute',
+        bottom: '0.5%',
+        width: '99%'
+      }
+      const mainStyle = {
+        color: 'tomato',
+        border: '1px solid green'
+      }
+      const tech = ['C++', 'Java', 'Spring Boot', 'JS', 'Qt']
+      const user = (
+        <div style={{border: '5px dotted teal', margin: '5%'}}>
+          <h1>Pkow</h1>
+          <p>Poland</p>
+          <p>Male</p>
+        </div>
+      );
+      const header = (
+        <header>
+          {user}
+        </header>
+      )
+
+      const some2DArray = [[1,2,3], [4,5,6], [7,8,9]];//React flatuje all => some2DArray.flat(infinite)
+      const main = (
+        <main style={mainStyle}>
+            <ul>
+              {tech.map((element)=><li key={element}>{element}</li>)}
+            </ul>
+        </main>
+      )
+      const footer =(
+        <footer style={footerStyle}>
+          <p>{some2DArray}</p>
+          <p>No Copyright 2024</p>
+        </footer>
+      )
+
+      const app = (
+        <div className='app' style={appStyle}>
+          {header}
+          {main}
+          {footer}
+        </div>
+      )
+
+      // we render the JSX element using the ReactDOM package
+      ReactDOM.render(app, rootElement)
+    </script>
+  </body>
+</html>
