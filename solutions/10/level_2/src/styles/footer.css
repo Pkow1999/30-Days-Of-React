@@ -1,0 +1,15 @@
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  /* Height of the footer */
+  background: #8c1729ff;
+  color: white;
+}
+
+.footer-wrapper {
+  font-weight: 400;
+  text-align: center;
+  line-height: 60px;
+}
